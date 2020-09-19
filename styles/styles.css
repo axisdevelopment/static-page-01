@@ -1,0 +1,194 @@
+/* TEXT ELEMENTS
+-------------------------------------------------------------*/
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    line-height: 30px;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1;
+    line-height: 19px;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: var(--green-two);
+    transition: all 0.15s;
+}
+
+a:hover {
+    color: var(--green-three);
+}
+
+cite {
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+/* TEXT CLASS STYLES
+-------------------------------------------------------------*/
+.w-light {
+    font-weight: 300;
+}
+
+.w-regular {
+    font-weight: 400;
+}
+
+.tiny {
+    font-size: 14px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.spacing-0 {
+    letter-spacing: 0;
+}
+
+.subtitle-1 {
+    color: var(--green-four);
+}
+
+.underline-1 {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.txt-color-1 {
+    color: var(--green-four);
+}
+
+/* BUTTONS ELEMENTS
+-------------------------------------------------------------*/
+button {
+    outline: none;
+    padding: 5px 8px;
+    border: 1px solid white;
+    background-color: white;
+    color: var(--green-one);
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.2s;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* BUTTONS CLASS STYLES
+-------------------------------------------------------------*/
+.btn {
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 0;
+    border-color: var(--green-three);
+    background-color: var(--green-three);
+    color: white;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border-color: var(--green-two);
+    background-color: var(--green-two);
+}
+
+.dark-btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.dark-btn:hover {
+    background-color: white;
+    color: var(--green-one);
+}
+
+/* FORM ELEMENTS
+-------------------------------------------------------------*/
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color:white;
+}
+
+input,
+textarea {
+    outline: none;
+    padding: 5px 8px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 2px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--green-three);
+}
+
+/* DECORATION CLASS STYLES
+-------------------------------------------------------------*/
+.border-top-1-30 {
+    border-top: 30px solid rgba(0, 0, 0, 0.3);
+}
+
+/* SPACING CLASS STYLES
+-------------------------------------------------------------*/
+.m-bot-5 {
+    margin-bottom: 5px;
+}
+
+.m-bot-10 {
+    margin-bottom: 10px;
+}
+
+.m-bot-15 {
+    margin-bottom: 15px;
+}
+
+.m-bot-20 {
+    margin-bottom: 20px;
+}
+
+.m-bot-25 {
+    margin-bottom: 25px;
+}

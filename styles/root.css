@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --green-base: #33691e;
+    --green-one: #558b2f;
+    --green-two: #689f38;
+    --green-three: #afb42b;
+    --green-four: #eeff41;
+    --gray-base: #263238;
+    --gray: #455a64;
+
+}

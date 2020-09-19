@@ -1,0 +1,371 @@
+/* HEADER
+--------------------------------------------------------*/
+header {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    min-height: 400px;
+    max-height: 800px;
+    background-image: url("../images/header_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Header title */
+.head-title {
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+}
+
+.head-title h1 {
+    color: white;
+    font-weight: 600;
+}
+
+/* Header box */
+.head-box {
+    position: absolute;
+    top: calc(100vh - 350px);
+    left: 5vw;
+    width: 400px;
+    height: 300px;
+    padding: 25px;
+    text-align: center;
+    background-color: var(--green-two);
+    color: white;
+    box-shadow: 10px 10px 0px var(--green-base);
+}
+
+/* Nav */
+#nav {
+    position: fixed;
+    width: 55px;
+    right: 0;
+    top: 35%;
+    padding: 20px 20px 0 10px;
+    z-index: 999;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+#nav a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav p {
+    opacity: 0;
+    margin-right: 12px;
+    color: white;
+    transition: all 0.2s;
+}
+
+#nav img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 15px;
+    display: block;
+    transition: all 0.2s;
+}
+
+#nav:hover {
+    width: 170px;
+}
+
+#nav:hover p {
+    opacity: 1;
+}
+
+#nav-home:hover img {
+    content: url("../images/icons/home_hover.png");
+    transform: scale(1.2);
+}
+
+#nav-presentation:hover img {
+    content: url("../images/icons/presentation_hover.png");
+    transform: scale(1.2);
+}
+
+#nav-points:hover img {
+    content: url("../images/icons/points_hover.png");
+    transform: scale(1.2);
+}
+
+#nav-events:hover img {
+    content: url("../images/icons/events_hover.png");
+    transform: scale(1.2);
+}
+
+#nav-schedule:hover img {
+    content: url("../images/icons/schedule_hover.png");
+    transform: scale(1.2);
+}
+
+#nav-contact:hover img {
+    content: url("../images/icons/contact_hover.png");
+    transform: scale(1.2);
+}
+
+/* MAIN
+--------------------------------------------------------*/
+main {
+    background-color: var(--gray-base);
+}
+
+/* Presentation */
+#presentation {
+    display: flex;
+    margin: 0 auto;
+    padding: 100px 5%;
+    max-width: 1300px;
+    color:white;
+}
+
+.presentation-quote {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    max-width: 300px;
+    margin-left: 80px;
+    padding-left: 20px;
+    justify-content: center;
+    border-left: 1px solid var(--green-three);
+}
+
+.presentation-quote img {
+    max-width: 100px;
+}
+
+/* Points */
+#points {
+    width: 100%;
+}
+
+.points-carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.point {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-height: 300px;
+    max-height: 500px;
+    padding-right: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.point-text {
+    text-align: center;
+    max-width: 450px;
+    padding: 35px;
+    border: 1px solid white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.owl-nav {
+    display: flex;
+    width: 100px;
+    position: absolute;
+    top: 90%;
+    left: calc(50% - 50px);
+}
+
+.owl-nav button {
+    width: 20px;
+    height: 20px;
+    margin: 0 20px !important;
+    font-size: 20px !important;
+    color: white !important;
+    background: none !important;
+}
+
+/* Events */
+#events {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 634px;
+    padding: 20px;
+    margin-right: 50px;
+    border-top: 1px solid var(--green-three);
+    border-bottom: 1px solid var(--green-three);
+}
+
+.event-card {
+    text-align: left;
+    width: 50%;
+    width: 280px;
+    height: 220px;
+    margin: 8px;
+    padding: 22px;
+    color: white;
+    transition: all 0.2s;
+}
+
+.events-text {
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 400px;
+    color: white;
+}
+
+.events-text img {
+    max-width: 100px;
+}
+
+/* Schedule */
+#schedule {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 5%;
+    color: white;
+    background-color: var(--gray);
+}
+
+.schedule-text {
+    max-width: 300px;
+    margin-right: 50px;
+}
+
+.schedule-box {
+    display: flex;
+    width: 100%;
+}
+
+.schedule-card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 5px;
+    padding: 15px;
+    border: 1px solid white;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.schedule-card:hover {
+    background-color: var(--gray-base);
+}
+
+/* Contact */
+#contact {
+    display: flex;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 5%;
+}
+
+.form {
+    min-width: 420px;
+    max-width: 420px;
+    margin-right: 50px;
+    border-right: 1px solid var(--green-three);
+}
+
+.contact-text {
+    width: 100%;
+    color: white;
+}
+
+.contact-web img {
+    margin-right: 15px;
+}
+
+.contact-direct {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 3px;
+}
+
+.contact-direct img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* FOOTER
+--------------------------------------------------------*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 5%;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer-cont {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    width: 100%;
+    margin-bottom: 3px;
+    font-size: 12px;
+    color: white
+}
+
+.footer-box-1 {
+    width: 100px;
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid white;
+}
+
+.footer-box-2 {
+    width: 200px;   
+    margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid white;
+}
+
+footer .contact-web img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+footer .contact-direct p {
+    font-size: 12px ;
+    color: white;
+}
+
+footer .contact-direct img{
+    width: 15px;
+    height: 15px;
+}
+
+.copyright {
+    font-size: 14px;
+    position: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
